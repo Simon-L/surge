@@ -23,6 +23,9 @@ set(CMAKE_CXX_FLAGS_INIT "${FLAGS}" CACHE STRING "" FORCE)
 
 set(CMAKE_SYSROOT /usr/bin)
 set(CMAKE_STAGING_PREFIX /home/devel/stage)
+include_directories("/usr/include")
+link_directories("/lib/aarch64-linux-gnu/")
+link_libraries(brotlidec png16 z brotlicommon)
 
 set(tools /usr)
 set(CMAKE_C_COMPILER ${tools}/bin/aarch64-linux-gnu-gcc)
