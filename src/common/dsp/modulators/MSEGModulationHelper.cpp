@@ -356,7 +356,7 @@ float valueAt(int ip, float fup, float df, MSEGStorage *ms, EvaluatorState *es, 
 
         if (fabs(V) > 1e-3)
         {
-            float Q = limit_range((1 - sqrt(disc)) / (2 * V), 0.00001f, 1000000.f);
+            float Q = limit_range(float((1 - sqrt(disc)) / (2 * V)), 0.00001f, 1000000.f);
             a = amul * 2 * log(Q);
         }
 
