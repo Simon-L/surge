@@ -224,6 +224,7 @@ target_include_directories(${PROJECT_NAME}
 )
 
 add_subdirectory(cli)
+add_subdirectory(cli-lib)
 
 if(APPLE)
   add_dependencies(${PROJECT_NAME}_Standalone ${PROJECT_NAME}-cli)
